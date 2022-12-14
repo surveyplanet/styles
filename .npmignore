@@ -1,0 +1,10 @@
+.DS_Store
+.git
+.github
+.gitignore
+.prettierignore
+.prettierrc
+.vscode
+package-lock.json
+package.json
+static
