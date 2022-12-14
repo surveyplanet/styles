@@ -1,0 +1,14 @@
+// font: font-style (italic) font-weight font-size/line-height font-family
+
+$font-family--serif: serif;
+$font-family--default: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+$font--xsmall: normal normal 1rem/130% $font-family--default;
+$font--xsmall-bold: normal bold 1rem/130% $font-family--default;
+$font--small: normal normal 1.2rem/130% $font-family--default;
+$font--default: normal normal 1.4rem/140% $font-family--default;
+$font--medium: $font--default; // alias
+$font--default-bold: normal bold 1.4rem/140% $font-family--default;
+$font--medium-bold: $font--default-bold; // alias
+$font--large: normal normal 1.6rem/140% $font-family--default;
