@@ -1,15 +1,12 @@
-@use './fonts.scss' as *;
-@use './colors.scss' as *;
+// @use './fonts.scss';
+// @use './colors.scss';
 
-// private member (begins with -)
-$-font-percentage: 62.5%;
+// html {
+// 	font-size: $font-percentage;
+// }
 
-html {
-	font-size: $-font-percentage;
-}
-
-body {
-	font: $font--default;
-	text-rendering: optimizeLegibility;
-	color: $color--dark;
-}
+// body {
+// 	font: fonts.$font--default;
+// 	text-rendering: optimizeLegibility;
+// 	color: colors.$color--dark;
+// }

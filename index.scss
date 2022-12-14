@@ -1,6 +1,6 @@
-@use './src/animations.scss';
-@use './src/colors.scss';
-@use './src/fonts.scss';
-@use './src/gutters.scss';
-@use './src/typography.scss';
-@use './src/utilities.scss';
+@forward './src/colors.scss';
+@forward './src/fonts.scss';
+@forward './src/gutters.scss';
+// @forward './src/typography.scss';
+@forward './src/mixins.scss';
+@forward './src/functions.scss';

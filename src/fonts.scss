@@ -1,8 +1,9 @@
 // font: font-style (italic) font-weight font-size/line-height font-family
 
+$font-percentage: 62.5%;
+
 $font-family--serif: serif;
 $font-family--default: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
 
 $font--xsmall: normal normal 1rem/130% $font-family--default;
 $font--xsmall-bold: normal bold 1rem/130% $font-family--default;

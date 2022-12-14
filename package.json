@@ -1,23 +1,12 @@
 {
     "name": "@surveyplanet/styles",
-    "version": "0.0.4",
-    "exports": {
-        ".": "./src/index.scss",
-        "animations": "./src/animations.scss",
-        "colors": "./src/colors.scss",
-        "fonts": "./src/fonts.scss",
-        "plugins": "./src/plugins.scss",
-        "sizes": "./src/sizes.scss",
-        "utilities": "./src/utilities.scss"
-    },
+    "version": "0.0.5",
     "main": "index.scss",
     "scripts": {
-        "build": "sass ./index.scss ./static/styles.css",
-        "dev": "sass --watch ./index.scss ./static/styles.css"
+        "build": "node-sass ./index.scss > ./test/styles.css"
     },
     "devDependencies": {
-        "node-sass": "^8.0.0",
-        "sass": "^1.56.1"
+        "node-sass": "^8.0.0"
     },
     "type": "module"
 }
