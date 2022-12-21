@@ -1,6 +1,4 @@
-// font: font-style (italic) font-weight font-size/line-height font-family
-
-
+@use './functions.scss';
 
 $font-percentage: 62.5%;
 
@@ -15,3 +13,21 @@ $font--medium: $font--default; // alias
 $font--default-bold: normal bold 1.4rem/140% $font-family--default;
 $font--medium-bold: $font--default-bold; // alias
 $font--large: normal normal 1.6rem/140% $font-family--default;
+
+
+@mixin load-suisse-font($family:"intl", $weight:"regular") {
+
+	$path: 'src/fonts/suisse/' + $family + '/' + $weight;
+	$name: 'Suisse ' + capitalize($family);
+
+	@if $weight != 'regular' {
+		$name: $name + ' ' + capitalize($weight);
+	}
+	
+	@font-face {
+		font-family: $name;
+		src: url($path + ".woff2") format('woff2'),
+			url($path + ".woff") format('woff'),
+			url($path + ".ttf") format('truetype');
+	}
+}

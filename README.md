@@ -85,6 +85,32 @@ $color--yellow-dark
 
 ## Fonts
 
+
+### Import Suisse Intl font
+[Suisse Intl](https://www.swisstypefaces.com/fonts/suisse/) fonts family of fonts need to be loaded for these styles. The fonts are available in this package but need to be loaded like so:
+
+```css
+@use './fonts.scss';
+load-suisse-font(); /* default: intl, regular*/
+load-suisse-font(mono, bold);
+```
+
+...resulting in:
+```css
+@font-face {
+	 font-family: "Suisse Intl";
+	 src: url("src/fonts/suisse/intl/regular.woff2") format('woff2'),
+	 url("src/fonts/suisse/intl/regular.woff") format('woff'), 
+	 url("src/fonts/suisse/intl/regular.ttf") format('truetype');
+}
+@font-face {
+	 font-family: "Suisse Mono Bold";
+	 src: url("src/fonts/suisse/mono/bold.woff2") format('woff2'),
+	 url("src/fonts/suisse/mono/bold.woff") format('woff'), 
+	 url("src/fonts/suisse/mono/bold.ttf") format('truetype');
+}
+```
+
 ### Font Families
 ```scss
 $font-family--serif
