@@ -17,7 +17,7 @@ $font--large: normal normal 1.6rem/140% $font-family--default;
 
 @mixin load-suisse-font($family:"intl", $weight:"regular") {
 
-	$path: 'src/fonts/suisse/' + $family + '/' + $weight;
+	$path: './src/fonts/suisse/' + $family + '/' + $weight;
 	$name: 'Suisse ' + capitalize($family);
 
 	@if $weight != 'regular' {
