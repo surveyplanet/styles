@@ -1,4 +1,4 @@
-@use './functions.scss';
+@use './functions.scss' as *;
 
 $font-percentage: 62.5%;
 
@@ -17,12 +17,18 @@ $font--large: normal normal 1.6rem/140% $font-family--default;
 
 @mixin load-suisse-font($family:"intl", $weight:"regular") {
 
-	$path: '@surveyplanet/styles/src/fonts/suisse/' + $family + '/' + $weight;
-	$name: 'Suisse ' + capitalize($family);
+	$path: '@surveyplanet/styles/src/fonts/suisse/#{$family}/#{$weight}';
+
+	$name: 'Suisse #{capitalize($family)}';
+
+	@debug $weight;
 
 	@if $weight != 'regular' {
-		$name: $name + ' ' + capitalize($weight);
+		$name: '#{$name} #{capitalize($weight)}';
 	}
+
+	@debug $path;
+	@debug $name;
 	
 	@font-face {
 		font-family: $name;
