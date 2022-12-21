@@ -2,7 +2,7 @@
 
 $font-percentage: 62.5%;
 
-$font-family--serif: serif;
+$font-family--serif: 'Suisse Works', 'Times New Roman', Times, serif;
 $font-family--default: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $font--xsmall: normal normal 1rem/130% $font-family--default;
@@ -26,8 +26,8 @@ $font--large: normal normal 1.6rem/140% $font-family--default;
 	
 	@font-face {
 		font-family: $name;
-		src: url($path + ".woff2") format('woff2'),
-			url($path + ".woff") format('woff'),
-			url($path + ".ttf") format('truetype');
+		src: url($path + ".woff2") format('woff2'), /* Modern browsers */
+			url($path + ".woff") format('woff'), /* Best support */
+			url($path + ".ttf") format('truetype'); /* Safari, Android, iOS */
 	}
 }
