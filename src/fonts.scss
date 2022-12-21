@@ -21,15 +21,10 @@ $font--large: normal normal 1.6rem/140% $font-family--default;
 
 	$name: 'Suisse #{capitalize($family)}';
 
-	@debug $weight;
-
 	@if $weight != 'regular' {
 		$name: '#{$name} #{capitalize($weight)}';
 	}
 
-	@debug $path;
-	@debug $name;
-	
 	@font-face {
 		font-family: $name;
 		src: url($path + ".woff2") format('woff2'), /* Modern browsers */
