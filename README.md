@@ -97,32 +97,52 @@ load-suisse-font(mono, bold);
 
 ### Font sizes
 
-| Property               | rem                   | px   |
-| ---------------------- | --------------------- | ---- |
-| `$font-size-10`        | 0.625rem              | 10px |
-| `$font-size-12`        | 0.75rem               | 12px |
-| `$font-size-14` (base) | 0.875rem              | 14px |
-| `$font-size-default`   | $font-size-14 (alias) | 14px |
-| `$font-size-16`        | 1rem                  | 16px |
-| `$font-size-18`        | 1.125rem              | 18px |
-| `$font-size-20`        | 1.25rem               | 20px |
-| `$font-size-24`        | 1.5rem                | 24px |
-| `$font-size-28`        | 1.75rem               | 28px |
-| `$font-size-32`        | 2rem                  | 32px |
-| `$font-size-36`        | 2.25rem               | 36px |
+| Property                     | rem           | px   |
+| ---------------------------- | ------------- | ---- |
+| `$font-size-10`              | 0.625rem      | 10px |
+| `$font-size-12`              | 0.75rem       | 12px |
+| `$font-size-14` (base)       | 0.875rem      | 14px |
+| `$font-size-default` (alias) | $font-size-14 | 14px |
+| `$font-size-16`              | 1rem          | 16px |
+| `$font-size-18`              | 1.125rem      | 18px |
+| `$font-size-20`              | 1.25rem       | 20px |
+| `$font-size-24`              | 1.5rem        | 24px |
+| `$font-size-28`              | 1.75rem       | 28px |
+| `$font-size-32`              | 2rem          | 32px |
+| `$font-size-36`              | 2.25rem       | 36px |
 
-### Fonts settings
+### Fonts shorthand
 
-| Property              | Value                                                                                     |
-| --------------------- | ----------------------------------------------------------------------------------------- |
-| `$font--xsmall`       | normal normal 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
-| `$font--xsmall-bold`  | normal bold 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
-| `$font--small`        | normal normal 0.75rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif  |
-| `$font--default`      | normal normal 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
-| `$font--medium`       | $font--default // alias                                                                   |
-| `$font--default-bold` | normal bold 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
-| `$font--medium-bold`  | $font--default-bold // alias                                                              |
-| `$font--large`        | normal normal 1rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif     |
+| Property                      | Value                                                                                     |
+| ----------------------------- | ----------------------------------------------------------------------------------------- |
+| `$font--xsmall`               | normal normal 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
+| `$font--xsmall-bold`          | normal bold 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
+| `$font--small`                | normal normal 0.75rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif  |
+| `$font--default`              | normal normal 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
+| `$font--medium` (alias)       | $font--default                                                                            |
+| `$font--default-bold`         | normal bold 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
+| `$font--medium-bold` ( alias) | $font--default-bold                                                                       |
+| `$font--large`                | normal normal 1rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif     |
+
+#### Usage
+
+```scss
+body {
+	font: $font--default;
+}
+```
+
+Computed result:
+
+```css
+body {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.875rem;
+	line-height: 140%;
+	font-family: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+```
 
 ## Gutters
 

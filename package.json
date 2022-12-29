@@ -1,6 +1,6 @@
 {
     "name": "@surveyplanet/styles",
-    "version": "0.1.7-1",
+    "version": "0.1.7-2",
     "main": "index.scss",
     "scripts": {
         "build": "node-sass ./index.scss > ./test/styles.css"
