@@ -4,7 +4,7 @@
 
 ```html
 <style lang="scss">
-	@use './node_modules/@surveyplanet/styles/index.scss' as *;
+	@use '@surveyplanet/styles' as *;
 	body {
 		color: $color--blue;
 		font: $font--default;
@@ -20,7 +20,7 @@ You may only need a single module, you can import it like this:
 
 ```html
 <style lang="scss">
-	@use './node_modules/@surveyplanet/styles/src/colors.scss';
+	@use '@surveyplanet/styles/src/colors.scss';
 	.blue-txt {
 		color: colors.$color--blue;
 	}
@@ -32,7 +32,7 @@ You may only need a single module, you can import it like this:
 ### Usage
 
 ```scss
-@use './node_modules/@surveyplanet/styles/index.scss' as *;
+@use '@surveyplanet/styles' as *;
 .button {
 	background-color: $color--yellow;
 	color: $color-dark;
@@ -65,7 +65,7 @@ You may only need a single module, you can import it like this:
 [Suisse Intl](https://www.swisstypefaces.com/fonts/suisse/) fonts family of fonts need to be loaded for these styles. The fonts are available in this package but need to be loaded like so:
 
 ```css
-@use './node_modules/@surveyplanet/styles/fonts.scss' as *;
+@use '@surveyplanet/styles/fonts.scss' as *;
 
 load-suisse-font(); /* default: intl, regular*/
 load-suisse-font(mono, bold);
@@ -97,19 +97,19 @@ load-suisse-font(mono, bold);
 
 ### Font sizes
 
-| Property                     | rem           | px   |
-| ---------------------------- | ------------- | ---- |
-| `$font-size-10`              | 0.625rem      | 10px |
-| `$font-size-12`              | 0.75rem       | 12px |
-| `$font-size-14` (base)       | 0.875rem      | 14px |
-| `$font-size-default` (alias) | $font-size-14 | 14px |
-| `$font-size-16`              | 1rem          | 16px |
-| `$font-size-18`              | 1.125rem      | 18px |
-| `$font-size-20`              | 1.25rem       | 20px |
-| `$font-size-24`              | 1.5rem        | 24px |
-| `$font-size-28`              | 1.75rem       | 28px |
-| `$font-size-32`              | 2rem          | 32px |
-| `$font-size-36`              | 2.25rem       | 36px |
+| Property                      | rem            | px   |
+| ----------------------------- | -------------- | ---- |
+| `$font-size--10`              | 0.625rem       | 10px |
+| `$font-size--12`              | 0.75rem        | 12px |
+| `$font-size--14` (base)       | 0.875rem       | 14px |
+| `$font-size--default` (alias) | $font-size--14 | 14px |
+| `$font-size--16`              | 1rem           | 16px |
+| `$font-size--18`              | 1.125rem       | 18px |
+| `$font-size--20`              | 1.25rem        | 20px |
+| `$font-size--24`              | 1.5rem         | 24px |
+| `$font-size--28`              | 1.75rem        | 28px |
+| `$font-size--32`              | 2rem           | 32px |
+| `$font-size--36`              | 2.25rem        | 36px |
 
 ### Fonts shorthand
 

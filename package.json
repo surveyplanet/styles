@@ -1,9 +1,10 @@
 {
     "name": "@surveyplanet/styles",
-    "version": "0.1.7-2",
+    "version": "0.1.7-3",
     "main": "index.scss",
     "scripts": {
-        "build": "node-sass ./index.scss > ./test/styles.css"
+        "test": "node-sass ./test/test.scss",
+        "build": "node-sass ./test/test.scss > ./test/styles.css"
     },
     "devDependencies": {
         "node-sass": "^8.0.0"
