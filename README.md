@@ -65,7 +65,7 @@ You may only need a single module, you can import it like this:
 [Suisse Intl](https://www.swisstypefaces.com/fonts/suisse/) fonts family of fonts need to be loaded for these styles. The fonts are available in this package but need to be loaded like so:
 
 ```css
-@use './node_modules/@surveyplanet/styles/index.scss' as *;
+@use './node_modules/@surveyplanet/styles/fonts.scss' as *;
 
 load-suisse-font(); /* default: intl, regular*/
 load-suisse-font(mono, bold);
@@ -103,7 +103,7 @@ load-suisse-font(mono, bold);
 | `$font-size-12`        | 0.75rem               | 12px |
 | `$font-size-14` (base) | 0.875rem              | 14px |
 | `$font-size-default`   | $font-size-14 (alias) | 14px |
-| `$font-size-16`        | 0.625rem              | 16px |
+| `$font-size-16`        | 1rem                  | 16px |
 | `$font-size-18`        | 1.125rem              | 18px |
 | `$font-size-20`        | 1.25rem               | 20px |
 | `$font-size-24`        | 1.5rem                | 24px |
@@ -113,16 +113,16 @@ load-suisse-font(mono, bold);
 
 ### Fonts settings
 
-| Property              | Value                                                       |
-| --------------------- | ----------------------------------------------------------- |
-| `$font--xsmall`       | normal normal $font-size-10/130% $font-family--default      |
-| `$font--xsmall-bold`  | normal bold $font-size-10/130% $font-family--default        |
-| `$font--small`        | normal normal $font-size-12/130% $font-family--default      |
-| `$font--default`      | normal normal $font-size-default/140% $font-family--default |
-| `$font--medium`       | $font--default // alias                                     |
-| `$font--default-bold` | normal bold $font-size-default/140% $font-family--default   |
-| `$font--medium-bold`  | $font--default-bold // alias                                |
-| `$font--large`        | normal normal $font-size-16/140% $font-family--default      |
+| Property              | Value                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------- |
+| `$font--xsmall`       | normal normal 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
+| `$font--xsmall-bold`  | normal bold 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
+| `$font--small`        | normal normal 0.75rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif  |
+| `$font--default`      | normal normal 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
+| `$font--medium`       | $font--default // alias                                                                   |
+| `$font--default-bold` | normal bold 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
+| `$font--medium-bold`  | $font--default-bold // alias                                                              |
+| `$font--large`        | normal normal 1rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif     |
 
 ## Gutters
 
