@@ -1,4 +1,21 @@
 @use 'sass:math';
+@use './functions.scss' as fnc;
+
+@mixin load-suisse-font($family: 'intl', $weight: 'regular') {
+	$path: '@surveyplanet/styles/src/fonts/suisse/#{$family}/#{$weight}';
+
+	$name: 'Suisse #{fnc.capitalize($family)}';
+
+	@if $weight != 'regular' {
+		$name: '#{$name} #{fnc.capitalize($weight)}';
+	}
+
+	@font-face {
+		font-family: $name;
+		src: url($path + '.woff2') format('woff2'), url($path + '.woff') format('woff'),
+			url($path + '.ttf') format('truetype');
+	}
+}
 
 @mixin spin($r: 360deg) {
 	@keyframes spin {

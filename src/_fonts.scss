@@ -1,4 +1,3 @@
-@use './functions.scss' as fnc;
 @use './sizes';
 
 $font-size--10: sizes.$size--10;
@@ -26,19 +25,3 @@ $font--medium: $font--default; // alias
 $font--default-bold: normal bold #{$font-size--14}/ 140% $font-family--default;
 $font--medium-bold: $font--default-bold; // alias
 $font--large: normal normal #{$font-size--16}/ 140% $font-family--default;
-
-@mixin load-suisse-font($family: 'intl', $weight: 'regular') {
-	$path: '@surveyplanet/styles/src/fonts/suisse/#{$family}/#{$weight}';
-
-	$name: 'Suisse #{fnc.capitalize($family)}';
-
-	@if $weight != 'regular' {
-		$name: '#{$name} #{fnc.capitalize($weight)}';
-	}
-
-	@font-face {
-		font-family: $name;
-		src: url($path + '.woff2') format('woff2'), url($path + '.woff') format('woff'),
-			url($path + '.ttf') format('truetype');
-	}
-}

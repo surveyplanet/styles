@@ -32,6 +32,18 @@ h3 {
 
 .popup {
 	background-color: $color--blue;
-	@include triangle($color--blue, up);
 	@include fade(in);
+	&:before {
+		@include triangle($color--blue, up);
+	}
+}
+
+.site-header {
+	padding: 2rem;
+	@include mq('tablet') {
+		padding: 2rem;
+	}
+	@include mq('desktop') {
+		padding: 4rem;
+	}
 }
