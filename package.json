@@ -1,13 +1,14 @@
 {
     "name": "@surveyplanet/styles",
-    "version": "0.1.7-4",
+    "version": "0.1.7-5",
     "main": "index.scss",
     "scripts": {
-        "test": "node-sass ./test/test.scss",
-        "build": "node-sass ./test/test.scss > ./test/styles.css"
+        "test": "sass test/test.scss",
+        "build": "sass test/test.scss test/styles.css --no-source-map"
     },
     "devDependencies": {
-        "node-sass": "^8.0.0"
+        "node-sass": "^8.0.0",
+        "sass": "^1.57.1"
     },
     "type": "module"
 }

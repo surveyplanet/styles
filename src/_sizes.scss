@@ -1,0 +1,51 @@
+// pixels / 16 = rem
+
+$size--1: 0.0625rem;
+$size--2: 0.125rem;
+$size--4: 0.25rem;
+$size--6: 0.375rem;
+$size--8: 0.5rem;
+$size--9: 0.5625rem;
+$size--10: 0.625rem;
+$size--11: 0.6875rem;
+$size--12: 0.75rem;
+$size--14: 0.875rem;
+$size--16: 1rem;
+$size--18: 1.125rem;
+$size--20: 1.25rem;
+$size--24: 1.5rem;
+$size--28: 1.75rem;
+$size--32: 2rem;
+$size--36: 2.25rem;
+$size--40: 2.5rem;
+$size--44: 2.75rem;
+$size--48: 3rem;
+$size--52: 3.25rem;
+$size--56: 3.5rem;
+$size--60: 3.75rem;
+$size--64: 4rem;
+$size--72: 4.5rem;
+$size--80: 5rem;
+$size--96: 6rem;
+$size--128: 8rem;
+$size--256: 16rem;
+
+$size-gutter--quadruple: $size--256; //256px;
+$size-gutter--triple: $size--128; //128px;
+$size-gutter--double: $size--64; //64px
+$size-gutter: $size--32; //32px
+$size-gutter--half: $size--16; //16px
+$size-gutter--quarter: $size--8; // 8px
+$size-gutter--eighth: $size--4; // 4px
+$size-gutter--sixteenth: $size--2; // 2px
+
+$size-radius--small: 3px;
+$size-radius--default: 5px;
+$size-radius--large: 10px;
+
+$size--full: 100%;
+$size--screen-width: 100vw;
+$size--screen-height: 100vh;
+$size--min: min-content;
+$size--max: max-content;
+$size--fit: fit-content;

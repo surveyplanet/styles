@@ -144,18 +144,73 @@ body {
 }
 ```
 
-## Gutters
+## Sizes
 
-| Property             | rem      | px    |
-| -------------------- | -------- | ----- |
-| `$gutter--quadruple` | 25.6rem  | 256px |
-| `$gutter--triple`    | 8rem     | 128px |
-| `$gutter--double`    | 4rem     | 64px  |
-| `$gutter`            | 2rem     | 32px  |
-| `$gutter--half`      | 1rem     | 16px  |
-| `$gutter--quarter`   | 0.5rem   | 8px   |
-| `$gutter--eighth`    | 0.25rem  | 4px   |
-| `$gutter--sixteenth` | 0.125rem | 2px   |
+### Base sizes
+
+| Property     | rem       | px    |
+| ------------ | --------- | ----- |
+| `$size--1`   | 0.0625rem | 1px   |
+| `$size--2`   | 0.125rem  | 2px   |
+| `$size--4`   | 0.25rem   | 4px   |
+| `$size--6`   | 0.375rem  | 6px   |
+| `$size--8`   | 0.5rem    | 8px   |
+| `$size--9`   | 0.5625rem | 9px   |
+| `$size--10`  | 0.625rem  | 10px  |
+| `$size--11`  | 0.6875rem | 11px  |
+| `$size--12`  | 0.75rem   | 12px  |
+| `$size--14`  | 0.875rem  | 14px  |
+| `$size--16`  | 1rem      | 16px  |
+| `$size--18`  | 1.125rem  | 18px  |
+| `$size--20`  | 1.25rem   | 20px  |
+| `$size--24`  | 1.5rem    | 24px  |
+| `$size--28`  | 1.75rem   | 28px  |
+| `$size--32`  | 2rem      | 32px  |
+| `$size--36`  | 2.25rem   | 36px  |
+| `$size--40`  | 2.5rem    | 40px  |
+| `$size--44`  | 2.75rem   | 44px  |
+| `$size--48`  | 3rem      | 48px  |
+| `$size--52`  | 3.25rem   | 52px  |
+| `$size--56`  | 3.5rem    | 56px  |
+| `$size--60`  | 3.75rem   | 60px  |
+| `$size--64`  | 4rem      | 64px  |
+| `$size--72`  | 4.5rem    | 72px  |
+| `$size--80`  | 5rem      | 80px  |
+| `$size--96`  | 6rem      | 96px  |
+| `$size--128` | 8rem      | 128px |
+| `$size--256` | 16rem     | 256px |
+
+### Gutters
+
+| Property                  | rem      | px    |
+| ------------------------- | -------- | ----- |
+| `$size-gutter--quadruple` | 25.6rem  | 256px |
+| `$size-gutter--triple`    | 8rem     | 128px |
+| `$size-gutter--double`    | 4rem     | 64px  |
+| `$size-gutter`            | 2rem     | 32px  |
+| `$size-gutter--half`      | 1rem     | 16px  |
+| `$size-gutter--quarter`   | 0.5rem   | 8px   |
+| `$size-gutter--eighth`    | 0.25rem  | 4px   |
+| `$size-gutter--sixteenth` | 0.125rem | 2px   |
+
+### Radius sizes
+
+| Property                | px   |
+| ----------------------- | ---- |
+| `$size-radius--small`   | 3px  |
+| `$size-radius--default` | 5px  |
+| `$size-radius--large`   | 10px |
+
+### Size utilities
+
+| Property               | Value       | description                                                                                                                                                                                                                                                                            |
+| ---------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `$size--full`          | 100%        | Set the element size to 100%                                                                                                                                                                                                                                                           |
+| `$size--screen-width`  | 100vw       | Set the element size to 100% of the viewport width                                                                                                                                                                                                                                     |
+| `$size--screen-height` | 100vh       | Set the element size to 100% of the viewport hight                                                                                                                                                                                                                                     |
+| `$size--min`           | min-content | The [`min-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content) sizing keyword represents the intrinsic minimum width of the content. For text content this means that the content will take all soft-wrapping opportunities, becoming as small as the longest word. |
+| `$size--max`           | max-content | The [`max-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content) sizing keyword represents the intrinsic maximum width or height of the content. For text content this means that the content will not wrap at all even if it causes overflows.                       |
+| `$size--fit`           | fit-content | [`fit-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content) sets the width of an element to use all available space.                                                                                                                                                 |
 
 ## Mixins
 

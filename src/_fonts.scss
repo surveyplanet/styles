@@ -1,42 +1,39 @@
-@use './functions.scss' as *;
+@use './functions.scss' as fnc;
+@use './sizes';
 
-// https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
-// $font-percentage: 62.5%;
-
-// pixels / 16 = rem
-$font-size--10: 0.625rem; /* 10px */
-$font-size--12: 0.75rem; /* 12px */
-$font-size--14: 0.875rem; /* 14px (base) */
-$font-size--default: $font-size--14; // alias
-$font-size--16: 1rem; /* 16px*/
-$font-size--18: 1.125rem; /* 18px*/
-$font-size--20: 1.25rem; /* 20px */
-$font-size--24: 1.5rem; /* 24px */
-$font-size--28: 1.75rem; /* 28px */
-$font-size--32: 2rem; /* 32px */
-$font-size--36: 2.25rem; /* 36px */
+$font-size--10: sizes.$size--10;
+$font-size--12: sizes.$size--12;
+$font-size--14: sizes.$size--14;
+$font-size--default: $font-size--14;
+$font-size--16: sizes.$size--16;
+$font-size--18: sizes.$size--18;
+$font-size--20: sizes.$size--20;
+$font-size--24: sizes.$size--24;
+$font-size--28: sizes.$size--28;
+$font-size--32: sizes.$size--32;
+$font-size--36: sizes.$size--36;
 
 $font-family--serif: 'Suisse Works', 'Times New Roman', Times, serif;
 $font-family--sans: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family--default: $font-family--sans;
 $font-family--mono: 'Suisse Mono', 'Courier New', Courier, monospace;
 
-$font--xsmall: normal normal 0.625rem/130% $font-family--default;
-$font--xsmall-bold: normal bold 0.625rem/130% $font-family--default;
-$font--small: normal normal 0.75rem/130% $font-family--default;
-$font--default: normal normal 0.875rem/140% $font-family--default;
+$font--xsmall: normal normal #{$font-size--10}/ 130% $font-family--default;
+$font--xsmall-bold: normal bold #{$font-size--10}/ 130% $font-family--default;
+$font--small: normal normal #{$font-size--12}/ 130% $font-family--default;
+$font--default: normal normal #{$font-size--14}/ 140% $font-family--default;
 $font--medium: $font--default; // alias
-$font--default-bold: normal bold 0.875rem/140% $font-family--default;
+$font--default-bold: normal bold #{$font-size--14}/ 140% $font-family--default;
 $font--medium-bold: $font--default-bold; // alias
-$font--large: normal normal 1rem/140% $font-family--default;
+$font--large: normal normal #{$font-size--16}/ 140% $font-family--default;
 
 @mixin load-suisse-font($family: 'intl', $weight: 'regular') {
 	$path: '@surveyplanet/styles/src/fonts/suisse/#{$family}/#{$weight}';
 
-	$name: 'Suisse #{capitalize($family)}';
+	$name: 'Suisse #{fnc.capitalize($family)}';
 
 	@if $weight != 'regular' {
-		$name: '#{$name} #{capitalize($weight)}';
+		$name: '#{$name} #{fnc.capitalize($weight)}';
 	}
 
 	@font-face {
