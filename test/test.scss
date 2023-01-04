@@ -1,0 +1,37 @@
+@use '../_index.scss' as *;
+
+@include load-suisse-font(); /* Suisse Intl */
+@include spin();
+
+:root {
+	color: $color--dark;
+	font: $font--default;
+}
+
+h1 {
+	font: $font--large;
+	margin: $size-gutter $size-gutter--half;
+}
+
+h2 {
+	font: $font--medium-bold;
+	color: $color--blue;
+	span {
+		color: $color--pink;
+	}
+}
+
+h3 {
+	font: $font--medium-bold;
+	color: $color--green;
+	span {
+		color: $color--yellow;
+	}
+	@include truncate($size-gutter--quadruple);
+}
+
+.popup {
+	background-color: $color--blue;
+	@include triangle($color--blue, up);
+	@include fade(in);
+}
