@@ -62,16 +62,70 @@ You may only need a single module, you can import it like this:
 
 ### Import Suisse Intl font
 
-[Suisse Intl](https://www.swisstypefaces.com/fonts/suisse/) fonts family of fonts need to be loaded for these styles. The fonts are available in this package but need to be loaded like so:
+[Suisse Intl](https://www.swisstypefaces.com/fonts/suisse/) fonts family of fonts need to be loaded for these styles.
+
+#### Fonts available
+
+| Family | Style          | Usage                                      |
+| ------ | -------------- | ------------------------------------------ |
+| cond   | bold           | `load-suisse-font(cond, bold)`             |
+| cond   | thin           | `load-suisse-font(cond, thin)`             |
+| intl   | black          | `load-suisse-font(intl, black)`            |
+| intl   | blackitalic    | `load-suisse-font(intl, blackitalic)`      |
+| intl   | bold           | `load-suisse-font(intl, bold)`             |
+| intl   | bolditalic     | `load-suisse-font(intl, bolditalic)`       |
+| intl   | book           | `load-suisse-font(intl, book)`             |
+| intl   | bookitalic     | `load-suisse-font(intl, bookitalic)`       |
+| intl   | light          | `load-suisse-font(intl, light)`            |
+| intl   | lightitalic    | `load-suisse-font(intl, lightitalic)`      |
+| intl   | medium         | `load-suisse-font(intl, medium)`           |
+| intl   | mediumitalic   | `load-suisse-font(intl, mediumitalic)`     |
+| intl   | regular        | `load-suisse-font(intl, regular)`          |
+| intl   | semibold       | `load-suisse-font(intl, semibold)`         |
+| intl   | thinitalic     | `load-suisse-font(intl, thinitalic)`       |
+| intl   | ultralight     | `load-suisse-font(intl, ultralight)`       |
+| mono   | bold           | `load-suisse-font(mono, bold)`             |
+| mono   | regular        | `load-suisse-font(mono, regular)`          |
+| mono   | thin           | `load-suisse-font(mono, thin)`             |
+| neue   | light          | `load-suisse-font(neue, light)`            |
+| neue   | lightitalic    | `load-suisse-font(neue, lightitalic)`      |
+| neue   | medium         | `load-suisse-font(neue, medium)`           |
+| neue   | mediumitalic   | `load-suisse-font(neue, mediumitalic)`     |
+| neue   | regular        | `load-suisse-font(neue, regular)`          |
+| neue   | thin           | `load-suisse-font(neue, thin)`             |
+| screen | bold           | `load-suisse-font(screen, bold)`           |
+| screen | bolditalic     | `load-suisse-font(screen, bolditalic)`     |
+| screen | light          | `load-suisse-font(screen, light)`          |
+| screen | lightitalic    | `load-suisse-font(screen, lightitalic)`    |
+| screen | medium         | `load-suisse-font(screen, medium)`         |
+| screen | mediumitalic   | `load-suisse-font(screen, mediumitalic)`   |
+| screen | monitor        | `load-suisse-font(screen, monitor)`        |
+| screen | monitoritalic  | `load-suisse-font(screen, monitoritalic)`  |
+| screen | regular        | `load-suisse-font(screen, regular)`        |
+| screen | regularitalic  | `load-suisse-font(screen, regularitalic)`  |
+| screen | semibold       | `load-suisse-font(screen, semibold)`       |
+| screen | semibolditalic | `load-suisse-font(screen, semibolditalic)` |
+| screen | thin           | `load-suisse-font(screen, thin)`           |
+| screen | thinitalic     | `load-suisse-font(screen, thinitalic)`     |
+| works  | bold           | `load-suisse-font(works, bold)`            |
+| works  | bolditalic     | `load-suisse-font(works, bolditalic)`      |
+| works  | book           | `load-suisse-font(works, book)`            |
+| works  | bookitalic     | `load-suisse-font(works, bookitalic)`      |
+| works  | medium         | `load-suisse-font(works, medium)`          |
+| works  | regular        | `load-suisse-font(works, regular)`         |
+
+#### Load fonts with mixin
+
+Suisse fonts are not available by default and need to be loaded using the mixins provided
 
 ```css
-@use '@surveyplanet/styles/fonts.scss' as *;
+@use '@surveyplanet/styles/mixins.scss' as *;
 
 load-suisse-font(); /* default: intl, regular*/
 load-suisse-font(mono, bold);
 ```
 
-...resulting in:
+##### Result
 
 ```css
 @font-face {
