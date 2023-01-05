@@ -1,7 +1,6 @@
-// https://sass-lang.com/documentation/at-rules/use#partials
-
 @forward './src/_colors.scss';
+@forward './src/_effects.scss';
 @forward './src/_fonts.scss';
-@forward './src/_sizes.scss';
-@forward './src/_mixins.scss';
 @forward './src/_functions.scss';
+@forward './src/_mixins.scss';
+@forward './src/_sizes.scss';
