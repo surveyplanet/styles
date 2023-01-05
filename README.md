@@ -165,6 +165,20 @@ load-suisse-font(mono, bold);
 | `$font-size--32`              | 2rem           | 32px |
 | `$font-size--36`              | 2.25rem        | 36px |
 
+### Font weights
+
+| Property                    | Weight | Description         |
+| --------------------------- | ------ | ------------------- |
+| `$font-weight--thin`        | 100    | Thin                |
+| `$font-weight--extra-light` | 200    | Extra (ultra) light |
+| `$font-weight--light`       | 300    | Light               |
+| `$font-weight--normal`      | 400    | Normal              |
+| `$font-weight--medium`      | 500    | Medium              |
+| `$font-weight--semi-bold`   | 600    | Semi (demi) bold    |
+| `$font-weight--bold`        | 700    | Bold                |
+| `$font-weight--extra-bold`  | 800    | Extra (ultra) bold  |
+| `$font-weight--black`       | 900    | Black (heavy)       |
+
 ### Fonts shorthand
 
 | Property                      | Value                                                                                     |
