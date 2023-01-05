@@ -1,5 +1,15 @@
 @use './sizes';
 
+$font--thin: 100;
+$font--extra-light: 200;
+$font--light: 300;
+$font--normal: 400;
+$font--medium: 500;
+$font--semi-bold: 600;
+$font--bold: 700;
+$font--extra-bold: 800;
+$font--black: 900;
+
 $font-size--10: sizes.$size--10;
 $font-size--12: sizes.$size--12;
 $font-size--14: sizes.$size--14;
@@ -17,11 +27,11 @@ $font-family--sans: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-seri
 $font-family--default: $font-family--sans;
 $font-family--mono: 'Suisse Mono', 'Courier New', Courier, monospace;
 
-$font--xsmall: normal normal #{$font-size--10}/ 130% $font-family--default;
-$font--xsmall-bold: normal bold #{$font-size--10}/ 130% $font-family--default;
-$font--small: normal normal #{$font-size--12}/ 130% $font-family--default;
-$font--default: normal normal #{$font-size--14}/ 140% $font-family--default;
+$font--xsmall: normal $font--normal #{$font-size--10}/ 130% $font-family--default;
+$font--xsmall-bold: normal $font--bold #{$font-size--10}/ 130% $font-family--default;
+$font--small: normal $font--normal #{$font-size--12}/ 130% $font-family--default;
+$font--default: normal $font--normal #{$font-size--14}/ 140% $font-family--default;
 $font--medium: $font--default; // alias
-$font--default-bold: normal bold #{$font-size--14}/ 140% $font-family--default;
+$font--default-bold: normal $font--bold #{$font-size--14}/ 140% $font-family--default;
 $font--medium-bold: $font--default-bold; // alias
-$font--large: normal normal #{$font-size--16}/ 140% $font-family--default;
+$font--large: normal $font--normal #{$font-size--16}/ 140% $font-family--default;
