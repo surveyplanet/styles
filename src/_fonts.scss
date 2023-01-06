@@ -22,16 +22,18 @@ $font-size--28: sizes.$size--28;
 $font-size--32: sizes.$size--32;
 $font-size--36: sizes.$size--36;
 
-$font-family--serif: 'Suisse Works', 'Times New Roman', Times, serif;
 $font-family--sans: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family--default: $font-family--sans;
+$font-family--sans-bold: 'Suisse Intl Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--default-bold: $font-family--sans-bold;
+$font-family--serif: 'Suisse Works', 'Times New Roman', Times, serif;
 $font-family--mono: 'Suisse Mono', 'Courier New', Courier, monospace;
 
 $font--xsmall: normal $font-weight--normal #{$font-size--10}/ 130% $font-family--default;
-$font--xsmall-bold: normal $font-weight--bold #{$font-size--10}/ 130% $font-family--default;
+$font--xsmall-bold: normal $font-weight--bold #{$font-size--10}/ 130% $font-family--default-bold;
 $font--small: normal $font-weight--normal #{$font-size--12}/ 130% $font-family--default;
 $font--default: normal $font-weight--normal #{$font-size--14}/ 140% $font-family--default;
 $font--medium: $font--default; // alias
-$font--default-bold: normal $font-weight--bold #{$font-size--14}/ 140% $font-family--default;
+$font--default-bold: normal $font-weight--bold #{$font-size--14}/ 140% $font-family--default-bold;
 $font--medium-bold: $font--default-bold; // alias
 $font--large: normal $font-weight--normal #{$font-size--16}/ 140% $font-family--default;

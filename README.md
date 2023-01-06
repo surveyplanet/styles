@@ -181,16 +181,16 @@ load-suisse-font(mono, bold);
 
 ### Fonts shorthand
 
-| Property                      | Value                                                                                     |
-| ----------------------------- | ----------------------------------------------------------------------------------------- |
-| `$font--xsmall`               | normal normal 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
-| `$font--xsmall-bold`          | normal bold 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
-| `$font--small`                | normal normal 0.75rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif  |
-| `$font--default`              | normal normal 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
-| `$font--medium` (alias)       | $font--default                                                                            |
-| `$font--default-bold`         | normal bold 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif   |
-| `$font--medium-bold` ( alias) | $font--default-bold                                                                       |
-| `$font--large`                | normal normal 1rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif     |
+| Property                      | Value                                                                                        |
+| ----------------------------- | -------------------------------------------------------------------------------------------- |
+| `$font--xsmall`               | normal normal 0.625rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif    |
+| `$font--xsmall-bold`          | normal bold 0.625rem/130% 'Suisse Intl', 'Helvetica Neue Bold', Helvetica, Arial, sans-serif |
+| `$font--small`                | normal normal 0.75rem/130% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif     |
+| `$font--default`              | normal normal 0.875rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif    |
+| `$font--medium` (alias)       | $font--default                                                                               |
+| `$font--default-bold`         | normal bold 0.875rem/140% 'Suisse Intl', 'Helvetica Neue Bold', Helvetica, Arial, sans-serif |
+| `$font--medium-bold` ( alias) | $font--default-bold                                                                          |
+| `$font--large`                | normal normal 1rem/140% 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif        |
 
 #### Usage
 
