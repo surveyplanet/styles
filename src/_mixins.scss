@@ -1,7 +1,7 @@
 @use 'sass:math';
 @use './functions.scss' as fnc;
 
-@mixin load-suisse-font($family: 'intl', $weight: 'regular') {
+@mixin load-suisse-font($family: 'intl', $weight: 'medium') {
 	$path: '@surveyplanet/styles/src/fonts/suisse/#{$family}/#{$weight}';
 
 	$name: 'Suisse #{fnc.capitalize($family)}';

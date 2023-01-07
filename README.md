@@ -121,7 +121,7 @@ Suisse fonts are not available by default and need to be loaded using the mixins
 ```css
 @use '@surveyplanet/styles/mixins.scss' as *;
 
-load-suisse-font(); /* default: intl, regular*/
+load-suisse-font(); /* default: intl, medium*/
 load-suisse-font(mono, bold);
 ```
 
@@ -130,8 +130,8 @@ load-suisse-font(mono, bold);
 ```css
 @font-face {
 	font-family: 'Suisse Intl';
-	src: url('src/fonts/suisse/intl/regular.woff2') format('woff2'), url('src/fonts/suisse/intl/regular.woff')
-			format('woff'), url('src/fonts/suisse/intl/regular.ttf') format('truetype');
+	src: url('src/fonts/suisse/intl/medium.woff2') format('woff2'), url('src/fonts/suisse/intl/medium.woff')
+			format('woff'), url('src/fonts/suisse/intl/medium.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Suisse Mono Bold';
@@ -142,12 +142,12 @@ load-suisse-font(mono, bold);
 
 ### Font families
 
-| Property                | Value                                                         |
-| ----------------------- | ------------------------------------------------------------- |
-| `$font-family--serif`   | 'Suisse Works', 'Times New Roman', Times, serif               |
-| `$font-family--sans`    | 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif |
-| `$font-family--default` | $font-family--sans                                            |
-| `$font-family--mono`    | 'Suisse Mono', 'Courier New', Courier, monospace              |
+| Property                | Value                                                                |
+| ----------------------- | -------------------------------------------------------------------- |
+| `$font-family--serif`   | 'Suisse Works', 'Times New Roman', Times, serif                      |
+| `$font-family--sans`    | 'Suisse Intl Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif |
+| `$font-family--default` | $font-family--sans                                                   |
+| `$font-family--mono`    | 'Suisse Mono', 'Courier New', Courier, monospace                     |
 
 ### Font sizes
 
