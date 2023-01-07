@@ -27,7 +27,70 @@ You may only need a single module, you can import it like this:
 </style>
 ```
 
-## Colors
+## Colors pallets
+
+### Slate - gray
+
+| Property              | Value     |
+| --------------------- | --------- |
+| `$color--slate-light` | `#dcdee1` |
+| `$color--slate`       | `#737a87` |
+| `$color--slate-dark`  | `#262b35` |
+
+### Magnolia - light purple
+
+| Property                     | Value     |
+| ---------------------------- | --------- |
+| `$color--light-purple-light` | `#f4f0ff` |
+| `$color--light-purple`       | `#ece5ff` |
+| `$color--light-purple-dark`  | `#baa5db` |
+
+### Lavender - purple
+
+| Property               | Value     |
+| ---------------------- | --------- |
+| `$color--purple-light` | `#baa5db` |
+| `$color--purple`       | `#b598ff` |
+| `$color--purple-dark`  | `#9a79ed` |
+
+### Sky - blue
+
+| Property             | Value     |
+| -------------------- | --------- |
+| `$color--blue-light` | `#d8f4fd` |
+| `$color--blue`       | `#9ee4fa` |
+| `$color--blue-dark`  | `#78c4ee` |
+
+### Spring - green
+
+| Property              | Value     |
+| --------------------- | --------- |
+| `$color--green-light` | `#d9fedb` |
+| `$color--green`       | `#a1fda5` |
+| `$color--green-dark`  | `#7be492` |
+
+### Bubble Gum - pink
+
+| Property             | Value     |
+| -------------------- | --------- |
+| `$color--pink-light` | `#ffd8f1` |
+| `$color--pink`       | `#ffb1e3` |
+| `$color--pink-dark`  | `#ea83c5` |
+
+### Sunrise - yellow
+
+| Property               | Value     |
+| ---------------------- | --------- |
+| `$color--yellow-light` | `#fff5bc` |
+| `$color--yellow`       | `#ffe978` |
+| `$color--yellow-dark`  | `#fac766` |
+
+### Shades
+
+| Property                | Value                   |
+| ----------------------- | ----------------------- |
+| `$color--white`         | `#ffffff`               |
+| `$color--black` (alias) | `$color--charcoal-dark` |
 
 ### Usage
 
@@ -35,28 +98,9 @@ You may only need a single module, you can import it like this:
 @use '@surveyplanet/styles' as *;
 .button {
 	background-color: $color--yellow;
-	color: $color-dark;
+	color: $color-slate-dark;
 }
 ```
-
-| Property                  | Value   |
-| ------------------------- | ------- |
-| `$color--blue`            | #9ee4fa |
-| `$color--blue-dark`       | #78c4ee |
-| `$color--white`           | #ffffff |
-| `$color--light`           | #f7f8f7 |
-| `$color--dark`            | #262b35 |
-| `$color--green`           | #a1fda5 |
-| `$color--green-dark`      | #a1fda5 |
-| `$color--pink`            | #ffb1e3 |
-| `$color--pink-dark`       | #ea83c5 |
-| `$color--purple-lightest` | #f6f1ff |
-| `$color--purple-lighter`  | #ede2ff |
-| `$color--purple-light`    | #baa5db |
-| `$color--purple`          | #b598ff |
-| `$color--purple-dark`     | #9a79ed |
-| `$color--yellow`          | #ffe978 |
-| `$color--yellow-dark`     | #fac766 |
 
 ## Fonts
 
