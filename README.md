@@ -49,7 +49,7 @@ You may only need a single module, you can import it like this:
 
 | Property               | Value     |
 | ---------------------- | --------- |
-| `$color--purple-light` | `#baa5db` |
+| `$color--purple-light` | `#dbccff` |
 | `$color--purple`       | `#b598ff` |
 | `$color--purple-dark`  | `#9a79ed` |
 
@@ -87,10 +87,10 @@ You may only need a single module, you can import it like this:
 
 ### Shades
 
-| Property                | Value                   |
-| ----------------------- | ----------------------- |
-| `$color--white`         | `#ffffff`               |
-| `$color--black` (alias) | `$color--charcoal-dark` |
+| Property                | Value                |
+| ----------------------- | -------------------- |
+| `$color--white`         | `#ffffff`            |
+| `$color--black` (alias) | `$color--slate-dark` |
 
 ### Usage
 

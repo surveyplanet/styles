@@ -1,15 +1,15 @@
 // Slate - gray
-$color--slate-light: #dcdee1;
-$color--slate: #737a87;
-$color--slate-dark: #262b35;
+$color--slate-light: #dcdee1; // $color--light
+$color--slate: #737a87; // $color--dark $color--darker
+$color--slate-dark: #262b35; // $color--darkest
 
 // Magnolia - light purple
-$color--light-purple-light: #f4f0ff;
-$color--light-purple: #ece5ff;
+$color--light-purple-light: #f4f0ff; // $color--purple-lightest
+$color--light-purple: #ece5ff; // $color--purple-lighter
 $color--light-purple-dark: #baa5db;
 
 // Lavender - purple
-$color--purple-light: #baa5db;
+$color--purple-light: #dbccff;
 $color--purple: #b598ff;
 $color--purple-dark: #9a79ed;
 
@@ -35,4 +35,4 @@ $color--yellow-dark: #fac766;
 
 // Shades
 $color--white: #ffffff;
-$color--black: $color--charcoal-dark;
+$color--black: $color--slate-dark;
