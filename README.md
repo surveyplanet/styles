@@ -326,42 +326,6 @@ body {
 
 ## Mixins
 
-### Spin
-
-The keyframes necessary to spin in a 360 degree circle.
-
-#### Parameters
-
-| Property    | Type  | Description              |
-| ----------- | ----- | ------------------------ |
-| `$r=360deg` | Sting | total degrees to rotate. |
-
-#### Example
-
-```scss
-@use 'src/mixins' as *;
-@include spin();
-.button {
-	animation: spin 1s linear infinite;
-}
-```
-
-#### Result
-
-```css
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-.button {
-	animation: spin 1s linear infinite;
-}
-```
-
 ### Pseudo
 
 When using ::before and ::after you'll always need these three lines,
@@ -500,6 +464,10 @@ Truncate the text inside an element.
 }
 ```
 
+## Animation
+
+Animation are just mixins that produce keyframes that can be used in animations
+
 #### Fade
 
 Fade in an element in or out
@@ -526,5 +494,79 @@ button {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 1s, opacity 1s;
+}
+```
+
+### Spin
+
+The keyframes necessary to spin in a 360 degree circle.
+
+#### Parameters
+
+| Property    | Type  | Description              |
+| ----------- | ----- | ------------------------ |
+| `$r=360deg` | Sting | total degrees to rotate. |
+
+#### Example
+
+```scss
+@use 'src/mixins' as *;
+@include spin();
+.button {
+	animation: spin 1s linear infinite;
+}
+```
+
+#### Result
+
+```css
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.button {
+	animation: spin 1s linear infinite;
+}
+```
+
+### Fade in out
+
+Fade an element in then fade it out.
+
+#### Parameters
+
+| Property | Type   | Description                      |
+| -------- | ------ | -------------------------------- |
+| `$min=0` | Number | The minimum opacity of the fade. |
+| `$min=1` | Number | The maximum opacity of the fade. |
+
+#### Example
+
+```scss
+@use 'src/mixins' as *;
+@include fadeInOut();
+.pulse {
+	animation: fadeinout 1s linear infinite;
+}
+```
+
+#### Result
+
+```css
+@keyframes fadeinout {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+.pulse {
+	animation: fadeinout 1s linear infinite;
 }
 ```

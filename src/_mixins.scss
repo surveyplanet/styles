@@ -17,17 +17,6 @@
 	}
 }
 
-@mixin spin($r: 360deg) {
-	@keyframes spin {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate($r);
-		}
-	}
-}
-
 @mixin pseudo($display: block, $position: absolute, $content: '') {
 	content: $content;
 	position: $position;
@@ -93,16 +82,4 @@ $-breakpoints: (
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-
-@mixin fade($direction: 'out') {
-	@if $direction == 'out' {
-		visibility: hidden;
-		opacity: 0;
-		transition: visibility 1s, opacity 1s;
-	} @else if $direction == 'in' {
-		visibility: visible;
-		opacity: 1;
-		transition: visibility 1s, opacity 1s;
-	}
 }
