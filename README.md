@@ -31,11 +31,12 @@ You may only need a single module, you can import it like this:
 
 ### Slate - gray
 
-| Property              | Value     |
-| --------------------- | --------- |
-| `$color--slate-light` | `#dcdee1` |
-| `$color--slate`       | `#737a87` |
-| `$color--slate-dark`  | `#262b35` |
+| Property                | Value     |
+| ----------------------- | --------- |
+| `$color--slate-lighter` | `#dcdee1` |
+| `$color--slate-light`   | `#a2a6af` |
+| `$color--slate`         | `#737a87` |
+| `$color--slate-dark`    | `#162137` |
 
 ### Magnolia - light purple
 
