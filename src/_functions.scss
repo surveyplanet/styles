@@ -1,4 +1,28 @@
-	
+@use 'sass:string';
+@use 'sass:math';
+@use 'sass:meta';
+
+/**
+ * Capitalize the first letter of a word
+ */
 @function capitalize($string) {
-  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+	@return string.to-upper-case(string.slice($string, 1, 1)) + string.slice($string, 2);
+}
+
+/**
+ * Remove the units (e.g.: px, rem, etc.) from a measurement
+ */
+@function px-to-rem($px) {
+	@return string.unquote(math.div(strip-unit($px), 16) + 'rem');
+}
+
+/**
+ * Remove the units (e.g.: px, rem, etc.) from a measurement
+ */
+@function strip-unit($number) {
+	@if meta.type-of($number) == 'number' and not math.is-unitless($number) {
+		@return math.div($number, ($number * 0 + 1));
+	}
+
+	@return $number;
 }

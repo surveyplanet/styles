@@ -46,4 +46,6 @@ h3 {
 	@include mq('desktop') {
 		padding: 4rem;
 	}
+
+	font-size: px-to-rem(20px);
 }

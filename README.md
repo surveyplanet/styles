@@ -570,3 +570,56 @@ Fade an element in then fade it out.
 	animation: fadeinout 1s linear infinite;
 }
 ```
+
+## Functions
+
+Function are a lot like mixins except they return values instead of CSS.
+
+### capitalize
+
+Capitalize the first letter of a string
+
+#### Parameters
+
+| Property  | Type   | Description               |
+| --------- | ------ | ------------------------- |
+| `$string` | String | The string to capitalize. |
+
+#### Example
+
+```scss
+font-family: capitalize(helvetica);
+```
+
+### Pixels to rems
+
+Convert pixels to rems
+
+#### Parameters
+
+| Property | Type   | Description                    |
+| -------- | ------ | ------------------------------ |
+| `$px`    | Number | The pixels to convert to rems. |
+
+#### Example
+
+```scss
+margin: px-to-rem(20);
+padding: px-to-rem(20px);
+```
+
+### Strip units
+
+Remove the units (e.g.: px, rem, etc.) from a measurement
+
+#### Parameters
+
+| Property | Type   | Description                     |
+| -------- | ------ | ------------------------------- |
+| `$unit`  | String | The value to remove units from. |
+
+#### Example
+
+```scss
+margin: string.unquote(strip-unit(20px) + 'rem');
+```
