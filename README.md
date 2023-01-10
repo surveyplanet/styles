@@ -166,7 +166,7 @@ Suisse fonts are not available by default and need to be loaded using the mixins
 ```css
 @use '@surveyplanet/styles/mixins.scss' as *;
 
-load-suisse-font(); /* default: intl, medium*/
+load-suisse-font(); /* default: screen, medium*/
 load-suisse-font(mono, bold);
 ```
 
@@ -174,7 +174,7 @@ load-suisse-font(mono, bold);
 
 ```css
 @font-face {
-	font-family: 'Suisse Intl';
+	font-family: 'Suisse Screen Medium';
 	src: url('src/fonts/suisse/intl/medium.woff2') format('woff2'), url('src/fonts/suisse/intl/medium.woff')
 			format('woff'), url('src/fonts/suisse/intl/medium.ttf') format('truetype');
 }
@@ -187,12 +187,12 @@ load-suisse-font(mono, bold);
 
 ### Font families
 
-| Property                | Value                                                                |
-| ----------------------- | -------------------------------------------------------------------- |
-| `$font-family--serif`   | 'Suisse Works', 'Times New Roman', Times, serif                      |
-| `$font-family--sans`    | 'Suisse Intl Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif |
-| `$font-family--default` | $font-family--sans                                                   |
-| `$font-family--mono`    | 'Suisse Mono', 'Courier New', Courier, monospace                     |
+| Property                | Value                                                                  |
+| ----------------------- | ---------------------------------------------------------------------- |
+| `$font-family--serif`   | 'Suisse Works', 'Times New Roman', Times, serif                        |
+| `$font-family--sans`    | 'Suisse Screen Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif |
+| `$font-family--default` | $font-family--sans                                                     |
+| `$font-family--mono`    | 'Suisse Mono', 'Courier New', Courier, monospace                       |
 
 ### Font sizes
 
